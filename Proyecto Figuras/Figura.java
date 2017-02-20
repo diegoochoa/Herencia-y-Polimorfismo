@@ -1,4 +1,5 @@
 public class Figura
+{
     protected float area;
     public Figura()
     {
