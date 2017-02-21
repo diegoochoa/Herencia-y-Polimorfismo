@@ -19,7 +19,7 @@ public class Principal
         
         for(Figura f : array)
         {
-            
+            System.out.println("El area es: "+f.accederArea());
         }
         
         
