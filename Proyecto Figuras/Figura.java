@@ -10,4 +10,10 @@ public class Figura
     {
         return area;
     }
+    
+    //Se agrego para que pase la comrobacion estatica de los datos
+    public void calculaArea()
+    {
+        System.out.println("Ups");
+    }
 }
