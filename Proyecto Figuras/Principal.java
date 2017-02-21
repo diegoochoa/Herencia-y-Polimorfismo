@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Iterator;
 public class Principal
 {
     public static void main(String [] args)
@@ -5,35 +7,25 @@ public class Principal
         Triangulo t1 = new Triangulo(3,4);
         Cuadrado c1 = new Cuadrado(5);
         Circulo c2 = new Circulo(6);
-        Figura [] array = new Figura[3];
-        Figura aux;
+        ArrayList<Figura> lista = new ArrayList<Figura>();
         
-        array[0]=t1;
-        array[1]=c1;
-        array[2]=c2;
+        lista.add(t1);
+        lista.add(c1);
+        lista.add(c2);
        
-        for(Figura f : array)
-        {
-            f.calculaArea();
+       Iterator<Figura> it = lista.iterator();
+       while(it.hasNext())
+       {
+           Figura aux=it.next();
+           aux.calculaArea();
         }
         
-        for(Figura f : array)
-        {
-            System.out.println("El area es: "+f.accederArea());
-        }
-        
-        
-        /*
-        t1.calculaArea();
-        System.out.println("El area del triangulo es: "+t1.accederArea());
-        
-        c1.calculaArea();
-        System.out.println("El area del cuadrado es: "+c1.accederArea());
-        
-        c2.calculaArea();
-        System.out.println("El area del circulo es: "+c2.accederArea());
-        */
-       
+       it=lista.iterator();
+       while(it.hasNext())
+       {
+           Figura aux=it.next();
+           System.out.println("El area es: "+aux.accederArea());
+       }
        //comprobacion estatica es checar los tipos de datos en el programa
        //comprobacion dinamica ocurre al ejecutar el programa 
     }
