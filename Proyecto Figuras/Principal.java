@@ -11,14 +11,15 @@ public class Principal
         array[0]=t1;
         array[1]=c1;
         array[2]=c2;
-        
-        for(int i=0; i<array.length ; i++)
+       
+        for(Figura f : array)
         {
-            array[i].calculaArea();
+            f.calculaArea();
         }
-        for(int i=0; i<array.length ; i++)
+        
+        for(Figura f : array)
         {
-            System.out.println("El area es: " +array[i].accederArea());
+            
         }
         
         
