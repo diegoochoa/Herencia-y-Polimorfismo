@@ -1,5 +1,7 @@
+
 public class Figura
 {
+    
     protected float area;
     public Figura()
     {
@@ -19,6 +21,7 @@ public class Figura
     
     public String dimeInfo()
     {
-        return "" + area;
+        String s = Float.toString(area);
+        return s;
     }
 }

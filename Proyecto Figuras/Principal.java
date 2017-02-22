@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Iterator; 
 public class Principal
 {
     public static void main(String [] args)
@@ -8,6 +8,7 @@ public class Principal
         Cuadrado c1 = new Cuadrado(5);
         Circulo c2 = new Circulo(6);
         ArrayList<Figura> lista = new ArrayList<Figura>();
+         
         
         lista.add(t1);
         lista.add(c1);
