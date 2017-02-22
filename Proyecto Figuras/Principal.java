@@ -13,20 +13,22 @@ public class Principal
         lista.add(c1);
         lista.add(c2);
        
-       Iterator<Figura> it = lista.iterator();
-       while(it.hasNext())
+       for(Figura f : lista)
        {
-           Figura aux=it.next();
-           aux.calculaArea();
-        }
-        
-       it=lista.iterator();
-       while(it.hasNext())
+           f.calculaArea();
+       } 
+       for(Figura f : lista)
        {
-           Figura aux=it.next();
-           System.out.println("El area es: "+aux.accederArea());
+           System.out.println(f.dimeInfo());
        }
+       
        //comprobacion estatica es checar los tipos de datos en el programa
        //comprobacion dinamica ocurre al ejecutar el programa 
+       /*
+        Triangulo@ff1e5
+        Cuadrado@66026e
+        Circulo@722258
+        //Numero es el identificador del objeto (clave o numero hash)
+        */
     }
 }
