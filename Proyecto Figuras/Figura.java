@@ -24,4 +24,9 @@ public class Figura
         String s = Float.toString(area);
         return s;
     }
+    @Override
+    public String toString()
+    {
+        return "" + area;
+    }
 }

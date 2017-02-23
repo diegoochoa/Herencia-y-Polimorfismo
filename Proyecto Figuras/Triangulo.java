@@ -18,4 +18,10 @@ public class Triangulo extends Figura
    {
        return "Triangulo " + super.dimeInfo();
    }
+   
+   @Override
+   public String toString()
+   {
+       return "Triangulo con area: "+super.toString();
+    }
 }

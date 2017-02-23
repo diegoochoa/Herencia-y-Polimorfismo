@@ -20,4 +20,9 @@ public class Circulo extends Figura
    {
        return "Circulo " + super.dimeInfo();
    }
+   @Override
+   public String toString()
+   {
+       return "Circulo con area: "+super.toString();
+   }
 }

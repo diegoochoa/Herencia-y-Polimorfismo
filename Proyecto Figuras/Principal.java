@@ -20,7 +20,7 @@ public class Principal
        } 
        for(Figura f : lista)
        {
-           System.out.println(f.dimeInfo());
+           System.out.println(f);
        }
        
        //comprobacion estatica es checar los tipos de datos en el programa
