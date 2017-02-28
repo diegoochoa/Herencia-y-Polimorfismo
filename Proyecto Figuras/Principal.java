@@ -4,26 +4,23 @@ public class Principal
 {
     public static void main(String [] args)
     {
-        Triangulo t1 = new Triangulo(4,5);
-        Cuadrado c1 = new Cuadrado(5);
+        Ventana vent = new Ventana(800,600);
+        vent.setVisible(true);
+        //Triangulo t1 = new Triangulo(4,5);
+        //Cuadrado c1 = new Cuadrado(5);
+        //c1.dibuja(0,0);
+        //Circulo c = new Circulo(6);
+       // Circulo c2 = new Circulo(6);
         
-        Circulo c = new Circulo(6);
-        Circulo c2 = new Circulo(6);
         
-        ArrayList<Figura> lista = new ArrayList<Figura>();
-         
-        
-        lista.add(t1);
-        lista.add(c1);
-        lista.add(c2);
-        
+        /*
         if(c.equals(t1)){
             System.out.println("Iguales");
         }
         else{
             System.out.println("Diferentes");
         }
-            
+          */  
         
        /*
        for(Figura f : lista)

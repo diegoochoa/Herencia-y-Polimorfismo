@@ -1,11 +1,14 @@
 import java.lang.Math;
 import java.text.DecimalFormat;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 public class Circulo extends Figura
 {
    private float radio;
    DecimalFormat df = new DecimalFormat("0.00");
-   public Circulo(float r)
+   public Circulo(int x,int y,float r)
    {
+       super(x,y);
        radio=r;
        area=0;
    }
@@ -36,6 +39,12 @@ public class Circulo extends Figura
        else{
            return false;
        }
+   }
+   
+   public void dibuja(Graphics g)
+   {
+       Graphics2D g2 = (Graphics2D)g;
+       g2.drawOval(super.regresaX(),super.regresaY(),(int)this.radio,(int)this.radio);
    }
    
 }

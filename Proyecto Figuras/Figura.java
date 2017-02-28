@@ -1,11 +1,15 @@
-
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 public class Figura
 {
-    
     protected float area;
-    public Figura()
+    private int x;
+    private int y;
+    public Figura(int a, int b)
     {
         area=0;
+        x=a;
+        y=b;
     }
     
     public float accederArea()
@@ -33,5 +37,17 @@ public class Figura
     public boolean equals(Object obj)
     {
         return this.area==((Figura)obj).area;
+    }
+    public int regresaX()
+    {
+        return x;
+    }
+    public int regresaY()
+    {
+        return y;
+    }
+    public void dibuja(Graphics g)
+    {
+         System.out.println("Printing");
     }
 }

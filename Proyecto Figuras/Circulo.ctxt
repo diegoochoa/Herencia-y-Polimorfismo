@@ -1,6 +1,6 @@
 #BlueJ class context
-comment0.params=r
-comment0.target=Circulo(float)
+comment0.params=x\ y\ r
+comment0.target=Circulo(int,\ int,\ float)
 comment1.params=
 comment1.target=void\ calculaArea()
 comment2.params=
@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=java.lang.String\ toString()
 comment4.params=obj
 comment4.target=boolean\ equals(java.lang.Object)
-numComments=5
+comment5.params=g
+comment5.target=void\ dibuja(java.awt.Graphics)
+numComments=6
