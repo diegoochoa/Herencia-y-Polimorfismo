@@ -1,12 +1,6 @@
 #BlueJ class context
 comment0.params=x\ y\ b\ h
 comment0.target=Triangulo(int,\ int,\ float,\ float)
-comment1.params=
-comment1.target=void\ calculaArea()
-comment2.params=
-comment2.target=java.lang.String\ dimeInfo()
-comment3.params=
-comment3.target=java.lang.String\ toString()
-comment4.params=g
-comment4.target=void\ dibuja(java.awt.Graphics)
-numComments=5
+comment1.params=g
+comment1.target=void\ dibuja(java.awt.Graphics)
+numComments=2
