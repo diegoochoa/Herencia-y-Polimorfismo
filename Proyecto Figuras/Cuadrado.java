@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Color;
 public class Cuadrado extends Figura
 {
    private float lado;
@@ -13,6 +14,7 @@ public class Cuadrado extends Figura
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
+       g.setColor(Color.green);
        g2.drawRect(regresaX(),regresaY(),(int)this.lado,(int)this.lado);
        
    }

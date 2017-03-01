@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Color;
 public class Circulo extends Figura
 {
    private float radio;
@@ -13,6 +14,7 @@ public class Circulo extends Figura
    public void dibuja(Graphics g)
    {
        Graphics2D g2 = (Graphics2D)g;
+       g.setColor(Color.blue);
        g2.drawOval(regresaX(),regresaY(),(int)radio,(int)radio);
    }
    
