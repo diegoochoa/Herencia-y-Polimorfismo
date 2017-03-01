@@ -14,5 +14,6 @@ public class Cuadrado extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g2.drawRect(regresaX(),regresaY(),(int)this.lado,(int)this.lado);
+       
    }
 }

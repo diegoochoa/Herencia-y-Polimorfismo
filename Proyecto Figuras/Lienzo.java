@@ -10,9 +10,11 @@ public class Lienzo extends JPanel
         Triangulo t1 = new Triangulo(150,150,100,120);
         Cuadrado c1 = new Cuadrado(200,200,100);
         Circulo c = new Circulo(300,300,100);
+        Rombo r = new Rombo(400,400,50,60);
         lista.add(t1);
         lista.add(c1);
         lista.add(c);
+        lista.add(r);
     }
     @Override
     public void paintComponent(Graphics g)
