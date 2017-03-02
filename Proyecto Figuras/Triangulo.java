@@ -15,6 +15,7 @@ public class Triangulo extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g.setColor(Color.red);
+      
        g2.drawLine(regresaX(),regresaY(),regresaX()+(int)base,regresaY());
        g2.drawLine(regresaX(),regresaY(),regresaX()+(int)base/2,regresaY()-(int)base/2);
        g2.drawLine(regresaX()+(int)base/2,regresaY()-(int)base/2,regresaX()+(int)base,regresaY());

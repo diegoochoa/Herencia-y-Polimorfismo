@@ -15,7 +15,8 @@ public class Circulo extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g.setColor(Color.blue);
-       g2.drawOval(regresaX(),regresaY(),(int)radio,(int)radio);
+       g2.fillOval(regresaX(),regresaY(),(int)radio,(int)radio);
+       //g2.drawOval(regresaX(),regresaY(),(int)radio,(int)radio);
    }
    
 }

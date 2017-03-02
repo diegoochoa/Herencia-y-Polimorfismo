@@ -15,7 +15,8 @@ public class Cuadrado extends Figura
    {
        Graphics2D g2 = (Graphics2D)g;
        g.setColor(Color.green);
-       g2.drawRect(regresaX(),regresaY(),(int)this.lado,(int)this.lado);
+       g2.fillRect(regresaX(),regresaY(),(int)this.lado,(int)this.lado);
+       //g2.drawRect(regresaX(),regresaY(),(int)this.lado,(int)this.lado);
        
    }
 }
