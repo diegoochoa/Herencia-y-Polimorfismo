@@ -27,6 +27,6 @@ public class Principal
        p.agregaPais(p2);
        p.agregaPais(p3);
        
-       System.out.println("Promedio de habitantes = "+df.format(p.promPais()));
+       System.out.println("Promedio de habitantes = "+df.format(p.calculaProm()));
    }
 }

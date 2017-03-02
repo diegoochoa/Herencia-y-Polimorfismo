@@ -4,5 +4,5 @@ comment0.target=Planeta()
 comment1.params=p
 comment1.target=void\ agregaPais(Pais)
 comment2.params=
-comment2.target=float\ promPais()
+comment2.target=float\ calculaProm()
 numComments=3

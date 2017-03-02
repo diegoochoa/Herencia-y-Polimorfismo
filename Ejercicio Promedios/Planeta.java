@@ -15,7 +15,7 @@ public class Planeta
        lista.add(p);
    }
    
-   public float promPais()
+   public float calculaProm()
    {
        Iterator<Pais> it = lista.iterator();
        while(it.hasNext())
