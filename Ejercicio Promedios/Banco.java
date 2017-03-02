@@ -16,13 +16,13 @@ public class Banco
     }
     public float calculaProm()
     {
+        
         Iterator<CuentaBancaria> it = lista.iterator();
         while(it.hasNext())
         {
             CuentaBancaria c = it.next();
-            suma=c.regresaSaldo();
+            suma+=c.regresaSaldo();
         }
-        System.out.println(suma);
        prom=(float)suma/lista.size();
        return prom;
     }
