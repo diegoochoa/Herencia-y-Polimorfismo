@@ -3,4 +3,6 @@ comment0.params=hab
 comment0.target=Pais(int)
 comment1.params=
 comment1.target=int\ regresaHab()
-numComments=2
+comment2.params=
+comment2.target=float\ getMeasure()
+numComments=3

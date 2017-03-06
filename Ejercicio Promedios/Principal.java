@@ -5,28 +5,25 @@ public class Principal
    public static void main(String [] args)
    {
        DecimalFormat df = new DecimalFormat("0.00");
-       Banco banco = new Banco();
        
-       CuentaBancaria c1= new CuentaBancaria(100);
-       CuentaBancaria c2= new CuentaBancaria(200);
-       CuentaBancaria c3= new CuentaBancaria(300);
+       Mesurable [] accounts = new Mesurable[3];
        
-       banco.agregarCuenta(c1);
-       banco.agregarCuenta(c2);
-       banco.agregarCuenta(c3);
+       accounts[0] = new CuentaBancaria(100);
+       accounts[1] = new CuentaBancaria(200);
+       accounts[2] = new CuentaBancaria(300);
+       
+       float averageBalance = Data.average(accounts);
               
-       System.out.println("Saldo promedio = "+banco.calculaProm());
+       System.out.println("Saldo promedio = "+averageBalance);
        
-       Planeta p = new Planeta();
+       Mesurable [] countries = new Mesurable[3];
        
-       Pais p1 = new Pais(25);
-       Pais p2 = new Pais(32);
-       Pais p3 = new Pais(94);
+       countries[0] = new Pais(25);
+       countries[1] = new Pais(32);
+       countries[2] = new Pais(94);
        
-       p.agregaPais(p1);
-       p.agregaPais(p2);
-       p.agregaPais(p3);
+       float averageArea = Data.average(countries);
        
-       System.out.println("Promedio de habitantes = "+df.format(p.calculaProm()));
+       System.out.println("Promedio de habitantes = "+df.format(averageArea));
    }
 }

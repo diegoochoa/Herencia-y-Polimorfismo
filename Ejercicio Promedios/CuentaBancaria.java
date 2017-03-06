@@ -1,4 +1,4 @@
-public class CuentaBancaria
+public class CuentaBancaria implements Mesurable
 {
     private int saldo;
     public CuentaBancaria(int saldo1)
@@ -6,6 +6,10 @@ public class CuentaBancaria
         saldo=saldo1;
     }
     public int regresaSaldo()
+    {
+        return saldo;
+    }
+    public float getMeasure()
     {
         return saldo;
     }
