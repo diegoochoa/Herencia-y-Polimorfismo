@@ -16,15 +16,12 @@ public class Banco
     }
     public float calculaProm()
     {
-        
-        Iterator<CuentaBancaria> it = lista.iterator();
-        while(it.hasNext())
-        {
-            CuentaBancaria c = it.next();
-            suma+=c.regresaSaldo();
+        CuentaBancaria [] arrCuentas = new CuentaBancaria[lista.size()];
+        //arrCuentas = lista.toArray(arrCuentas);
+        for(int i=0; i<lista.size();i++){
+            arrCuentas[i] = lista.get(i);
         }
-       prom=(float)suma/lista.size();
-       return prom;
+        return Data.average(arrCuentas);
     }
    
 }
