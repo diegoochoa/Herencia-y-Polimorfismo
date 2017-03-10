@@ -18,8 +18,8 @@ public class Pelota
     
     public void muevete(Rectangle r)
     {
-        System.out.println("Mueve pelota...");
-        System.out.println("Tamaño de la ventana: "+r.getWidth() + "," +r.getHeight());
+        //System.out.println("Mueve pelota...");
+        //System.out.println("Tamaño de la ventana: "+r.getWidth() + "," +r.getHeight());
         
         posx+=mx;
         posy+=my;
