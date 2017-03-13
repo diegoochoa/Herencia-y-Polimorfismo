@@ -13,8 +13,12 @@ public class Pelota
         posx=x;
         posy=y;
         radio=r;
-        mx=20;
-        my=20;
+        int aleatorio = (int)(Math.random()*2);
+        if(aleatorio == 0){
+            aleatorio = -1;
+        }
+        mx=aleatorio*20;
+        my=aleatorio*20;
     }
     
     public void muevete(Rectangle r)

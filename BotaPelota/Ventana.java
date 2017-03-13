@@ -24,8 +24,6 @@ public class Ventana extends JFrame
         tiempo = new Timer(50,escuchaTiempo);
         tiempo.start();
         
-        EscuchadorMouse escuchaRaton = new EscuchadorMouse();
-        this.addMouseListener(escuchaRaton);
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -67,46 +65,6 @@ public class Ventana extends JFrame
             //pelota.muevete(getBounds());//cambia de posicion
             //dibujo.repaint();
             dibujo.actua();
-        }
-    }
-    
-    class mouseAdapter implements MouseListener
-    {
-        @Override
-        public void mouseReleased(MouseEvent e) {
-            //System.out.println("");
-        }
-   
-        @Override
-        public void mousePressed(MouseEvent e) {
-            //System.out.println("");
-        }
-   
-        @Override
-        public void mouseExited(MouseEvent e) {
-            //System.out.println("");
-        }
-   
-        @Override
-        public void mouseEntered(MouseEvent e) {
-            //System.out.println("");
-        }
-   
-        @Override
-        public void mouseClicked(MouseEvent e) {
-            //System.out.println("");
-        }
-    }
-    
-    class EscuchadorMouse extends mouseAdapter
-    {
-        @Override
-        public void mousePressed(MouseEvent e) {
-            if(e.getX()>400)
-            {
-                System.out.println("Arriba de la coordenada 400 en X");
-            }
-            System.out.println("Se presiono el mouse");
         }
     }
 }
