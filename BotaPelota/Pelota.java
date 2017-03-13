@@ -1,5 +1,6 @@
 import java.awt.Graphics;
 import java.awt.Rectangle;
+import java.awt.Color;
 public class Pelota
 {
     private int posx;
@@ -41,6 +42,7 @@ public class Pelota
     {
         g.drawOval(posx,posy,radio*2,radio*2);
     }
+    
     
    
     

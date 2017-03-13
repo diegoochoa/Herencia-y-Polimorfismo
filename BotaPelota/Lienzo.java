@@ -1,5 +1,7 @@
 import javax.swing.JPanel;
 import java.awt.Graphics;
+
+import java.awt.Color;
 public class Lienzo extends JPanel
 {
     private Pelota pelota;
@@ -14,6 +16,7 @@ public class Lienzo extends JPanel
         pelota.muevete(this.getBounds());
         repaint();
     }
+    
     @Override
     public void paintComponent(Graphics g)
     {

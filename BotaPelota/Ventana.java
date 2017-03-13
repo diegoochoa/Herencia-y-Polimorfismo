@@ -3,6 +3,8 @@ import java.awt.event.KeyListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseEvent;
 import javax.swing.Timer;
 public class Ventana extends JFrame
 {
@@ -17,9 +19,13 @@ public class Ventana extends JFrame
         EscuchadorTeclado escuchaTeclado = new EscuchadorTeclado();
         this.addKeyListener(escuchaTeclado);
         
+        
         EscuchadorTiempo escuchaTiempo = new EscuchadorTiempo();
-        tiempo = new Timer(1000,escuchaTiempo);
+        tiempo = new Timer(50,escuchaTiempo);
         tiempo.start();
+        
+        EscuchadorMouse escuchaRaton = new EscuchadorMouse();
+        this.addMouseListener(escuchaRaton);
         
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -63,4 +69,65 @@ public class Ventana extends JFrame
             dibujo.actua();
         }
     }
+    
+    class mouseAdapter implements MouseListener
+    {
+        @Override
+        public void mouseReleased(MouseEvent e) {
+            //System.out.println("");
+        }
+   
+        @Override
+        public void mousePressed(MouseEvent e) {
+            //System.out.println("");
+        }
+   
+        @Override
+        public void mouseExited(MouseEvent e) {
+            //System.out.println("");
+        }
+   
+        @Override
+        public void mouseEntered(MouseEvent e) {
+            //System.out.println("");
+        }
+   
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            //System.out.println("");
+        }
+    }
+    
+    class EscuchadorMouse extends mouseAdapter
+    {
+        @Override
+        public void mousePressed(MouseEvent e) {
+            if(e.getX()>400)
+            {
+                System.out.println("Arriba de la coordenada 400 en X");
+            }
+            System.out.println("Se presiono el mouse");
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
